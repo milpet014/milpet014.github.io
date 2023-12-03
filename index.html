@@ -4,28 +4,109 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Café Bar Riviera</title>
+    <title>CBR - Domov</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
-
-    <header class="col-12">
+    
+    <header class="col-12 main_nav">
         <div class="col-12 title_main">
-            <h1>Café Bar Riviera</h1>
+            <h1><a href="index.html">Café Bar Riviera</a></h1>
         </div>
 
-        <div class="col-12 nav_main">
-            <ol>
-                <li><a class="main_nav_button" href="index.html">Domov</a></li>
-                <li><a class="main_nav_button" href="opening_hours.html">Otváracie hodiny</a></li>
-                <li><a class="main_nav_button" href="contacts.html">Kontakt</a></li>
-            </ol>
+        <div class="col-12">
+            <div class="dropdown">
+                <button class="dropbtn">MENU</button>
+                <ol class="dropdown-content">
+                    <li><a href="index.html">Domov</a></li>
+                    <li><a class="main_nav_button" href="opening_hours.html">Otváracie hodiny</a></li>
+                    <li><a href="contacts.html">Kontakt</a></li>
+                    <li><a href="conditions.html">Obchodné podmienky</a></li>
+                    <li><a href="timetable.html">Cestovný poriadok</a></li>
+                    <li><a href="cinema.html">RivieraKino</a></li>
+                </ol>
+            </div>
         </div>
     </header>
 
-    <h3>Domov</h3>
+    <content>
+        <div class="col-9">
+            <article class="card">
+                <header>
+                    <h3>Vitajte na stránkach Café Bar Riviera</h3>
+                </header>
+                <h4>Oficiálna stránka Café Bar Riviera</h4>
+                <p>
+                    V centre mestskej časti Žilina Trnové sa skrýva jedinečný klenot -
+                     Café Bar Riviera, kde sa zlúčila nádherná atmosféra s 
+                     lahodnými pochúťkami a štýlovým prostredím. Toto podnikavé 
+                     kaviarensko-barové miesto sa rýchlo stalo obľúbeným útočiskom 
+                     pre milovníkov dobrej kávy a príjemného oddychu.
+                </p>
 
+                <p>
+                    V Café Bar Riviera si môžete vychutnať aj kulinárske 
+                    dobrodružstvo s ponukou jedál, ktoré spájajú 
+                    tradičné chute s moderným prístupom k príprave. 
+                    Denné špeciály a sezónne ingrediencie zaručujú 
+                    čerstvosť a autenticitu každého jedla.
+                </p>
+            </article>
+
+            <article class="card">
+                <header>
+                    <h3>Kde nás nájdete:</h3>
+                </header>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d580.7315202981458!2d18.785102049183596!3d49.19304642766326!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4714590dc71cd6cd%3A0xebdf7b5a7e202ca2!2zRG9sbsOhIFRybm92c2vDoSAxOS80NSwgMDEwIDAxIMW9aWxpbmE!5e0!3m2!1ssk!2ssk!4v1701551768097!5m2!1ssk!2ssk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </article>
+        </div>
+
+        <div class="col-3">
+            <aside class="card aside">
+                <header>
+                    <h3>Nasledujúca Riviera:</h3>
+                    <p class="rivieraDate">4.12.2023</p>
+                </header>
+                <header>
+                    <h3>Zaujímavosti</h3>
+                </header>
+                <article>
+                    <div>
+                        <h4>Projektor</h4>
+                        <p>
+                            Našej Riviere sa podarilo 
+                            zakúpiť nový projektor 
+                            <a target="_blank" href="https://www.alza.sk/vankyo-leisure-530-w-d6931628.htm">VANKYO LEISURE E30T/530W</a> 
+                            vďaka, ktorému výrazne skvalitníme zážitok z pozerania multimédii v RivieraKino
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4>Lorem</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing 
+                            elit. Integer id dui nunc. Sed dignissim egestas 
+                            lectus, luctus posuere purus feugiat bibendum. 
+                            Praesent pulvinar sem erat, bibendum auctor 
+                            risus porttitor dignissim. 
+                        </p>
+                    </div>
+                </article>
+            </aside>
+        </div>
+    </content>
+
+    <footer class="col-12">
+        <ul>
+            <li>&copy</li>
+            <li>2023 | </li>
+            <li>Milan Petrík | </li>
+            <li><a href="conditions.html">Obchodné podmienky |</a></li>
+            <li><a href="contacts.html">Kontakty</a></li>
+        </ul>
+    </footer>
+    
 </body>
 
 </html>

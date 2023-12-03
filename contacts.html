@@ -9,23 +9,121 @@
 </head>
 
 <body>
-
-    <header class="col-12">
+    <header class="col-12 main_nav">
         <div class="col-12 title_main">
-            <h1>Café Bar Riviera</h1>
+            <h1><a href="index.html">Café Bar Riviera</a></h1>
         </div>
 
-        <div class="col-12 nav_main">
-            <ol>
-                <li><a class="main_nav_button" href="index.html">Domov</a></li>
-                <li><a class="main_nav_button" href="opening_hours.html">Otváracie hodiny</a></li>
-                <li><a class="main_nav_button" href="contacts.html">Kontakt</a></li>
-            </ol>
+        <div class="col-12">
+            <div class="dropdown">
+                <button class="dropbtn">MENU</button>
+                <ol class="dropdown-content">
+                    <li><a href="index.html">Domov</a></li>
+                    <li><a class="main_nav_button" href="opening_hours.html">Otváracie hodiny</a></li>
+                    <li><a href="contacts.html">Kontakt</a></li>
+                    <li><a href="conditions.html">Obchodné podmienky</a></li>
+                    <li><a href="timetable.html">Cestovný poriadok</a></li>
+                    <li><a href="cinema.html">RivieraKino</a></li>
+                </ol>
+            </div>
         </div>
     </header>
 
-    <h3>Kontakty</h3>
+    <content>
 
+        <div class="col-9">
+            <article class="card">
+                <header>
+                    <h3>Kontakty</h3>
+                </header>
+                <ul>
+                    <li>
+                        <h4>Adresa</h4>
+                        <ul>
+                            <li>Dolná trnovská 19/45</li>
+                            <li>010 01 Žilina</li>
+                            <li>Slovenská republika</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Mobil</h4>
+                        <ul>
+                            <li>+421 903 849 128</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>e-mail</h4>
+                        <ul>
+                            <li>petrik31@stud.uniza.sk</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Doprava</h4>
+                        <ul>
+                            <li>linka: 24</li>
+                            <li>zastávka: Cintorínska</li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <header>
+                    <h3>Kde nás nájdete:</h3>
+                </header>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d580.7315202981458!2d18.785102049183596!3d49.19304642766326!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4714590dc71cd6cd%3A0xebdf7b5a7e202ca2!2zRG9sbsOhIFRybm92c2vDoSAxOS80NSwgMDEwIDAxIMW9aWxpbmE!5e0!3m2!1ssk!2ssk!4v1701551768097!5m2!1ssk!2ssk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </article>
+
+
+            <article class="card">
+                <header>
+                    <h3>Kontaktný formulár</h3>
+                </header>
+                <h4>Lorem</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sapien ut urna tristique, vitae ornare dolor euismod. Suspendisse ac lacinia risus. Proin eleifend consequat lacus facilisis ornare. Quisque aliquam pellentesque sapien, vitae maximus nunc viverra vel. Nam pharetra libero ut ligula hendrerit, non scelerisque est vestibulum. Cras venenatis auctor erat, in rhoncus risus dignissim et. Nunc sagittis condimentum nisl vitae ullamcorper. 
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sapien ut urna tristique, vitae ornare dolor euismod. Suspendisse ac lacinia risus. Proin eleifend consequat lacus facilisis ornare. Quisque aliquam pellentesque sapien, vitae maximus nunc viverra vel. Nam pharetra libero ut ligula hendrerit, non scelerisque est vestibulum. Cras venenatis auctor erat, in rhoncus risus dignissim et. Nunc sagittis condimentum nisl vitae ullamcorper. 
+                </p>
+            </article>
+        </div>
+
+        <div class="col-3">
+            <aside class="card aside">
+                <header>
+                    <h3>Zaujímavosti</h3>
+                </header>
+                <article>
+                    <div>
+                        <h4>Projektor</h4>
+                        <p>
+                            Našej Riviere sa podarilo zakúpiť nový projektor <a target="_blank" href="https://www.alza.sk/vankyo-leisure-530-w-d6931628.htm">VANKYO LEISURE E30T/530W</a> vďaka, ktorému výrazne skvalitníme zážitok z pozerania multimédii v RivieraKino
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4>Lorem</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id dui nunc. Sed dignissim egestas lectus, luctus posuere purus feugiat bibendum. Praesent pulvinar sem erat, bibendum auctor risus porttitor dignissim. 
+                        </p>
+                    </div>
+                </article>
+            </aside>
+        </div>
+    </content>
+
+    <footer class="col-12">
+        <ul>
+            <li>&copy</li>
+            <li>2023 | </li>
+            <li>Milan Petrík | </li>
+            <li><a href="conditions.html">Obchodné podmienky |</a></li>
+            <li><a href="contacts.html">Kontakty</a></li>
+        </ul>
+    </footer>
+    
 </body>
 
 </html>
