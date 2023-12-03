@@ -113,15 +113,15 @@ p{
         display: block;
     }
 
-    .dropdown-content a:active{
+    .dropdown-content a:hover{
         background-color: #f1f1f1
     }
 
-    .dropdown:active .dropdown-content {
+    .dropdown:hover .dropdown-content {
         display: block;
     }
 
-    .dropdown:active .dropbtn {
+    .dropdown:hover .dropbtn {
         background-color:#ebb734;
         color:#346beb;
     }
