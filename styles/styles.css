@@ -6,17 +6,25 @@ html {
     height: 100%;
 }
 
-/*test*/
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-body{
-    min-height: 100%;
-    display:flex;
-    flex-direction: column;
+.page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.page-content{
+    height: 100%;
+    display: table;
+    position: relative;
+}
+
+.page-content, .dropdown{
+    max-width: 1200px;
+    margin: auto;
 }
 
 [class*="col-"] {
@@ -58,6 +66,7 @@ p{
 .title_main{
     background-image: url("../images/header_image.jpg");
     background-position: center;
+    background-size: cover;
     padding: 10em 0 10em 0;
     margin: 0;
 }
@@ -80,6 +89,22 @@ p{
 
 .main_nav{
     background-color:#34a5eb;
+    margin-bottom: 1em;
+}
+
+.btn{
+    background-color:#346beb;
+    color: white;
+    padding: 0.5em;
+    font-size: 1em;
+    border: none;
+    border-radius: 0.5em;
+    margin: 0.5em;
+}
+
+.btn:hover{
+    color:#346beb;
+    background-color:#ebb734;
 }
 
 @media only screen and (max-width: 767px) {
@@ -113,15 +138,15 @@ p{
         display: block;
     }
 
-    .dropdown-content a:hover{
+    .dropdown-content a:active{
         background-color: #f1f1f1
     }
 
-    .dropdown:hover .dropdown-content {
+    .dropdown:active .dropdown-content {
         display: block;
     }
 
-    .dropdown:hover .dropbtn {
+    .dropdown:active .dropbtn {
         background-color:#ebb734;
         color:#346beb;
     }
@@ -157,6 +182,8 @@ p{
 
 .map{
     width: 100%;
+    height: 40em;
+    border:none;
     border-radius: 1em;
 }
 
@@ -164,15 +191,21 @@ p{
     background-color: rgb(255, 243, 229);
     border-radius: 1em;
     padding: 1em;
-    margin: 1em;
+    margin: 0 0.5em 1.8em 0.5em;
 }
 
 .card h3{
-    font-size: 2em;
+    font-size: 1.5em;
     margin-bottom: 0.5em;
     border-bottom:#346beb;
     border-bottom-width: 0.1em;
     border-bottom-style:solid;
+}
+
+@media only screen and (min-width: 768px) {
+    .card h3{
+        font-size: min(3vw, 2em);
+    }
 }
 
 .card h4{
@@ -185,10 +218,6 @@ p{
     list-style: none;
 }
 
-.aside{
-    text-align:justify
-}
-
 .aside h3{
     font-size: 1.5em;
     text-align: center;
@@ -198,6 +227,7 @@ p{
 }
 
 .rivieraDate{
+    font-weight: bold;
     font-size: 3em;
     text-align: center;
     padding-block-end: 1em;
@@ -206,8 +236,60 @@ p{
     border-bottom-width: 0.06em;
 }
 
+@media only screen and (min-width: 768px) {
+    .rivieraDate{font-size: min(3.5vw, 3em);}
+}
+
+
+
+
+/* 404 ERROR */
+
+.e404{
+    text-align: center;
+}
+
+.e404 a{
+    color: white;
+    margin-top: 10em;
+    padding: 0.5em 2em 0.5em 2em;
+}
+
+.e404 h4{
+    margin-bottom: 2em;
+}
+
+.opening-hours-table td{
+    padding: 0.5em 1em 0.5em 0;
+    font-size: min(3.5vw, 1.5em);
+}
+
+@media only screen and (min-width: 768px) {
+    .rivieraDate{font-size: min(3.5vw, 3em);}
+}
+
+.timetable{
+    height: 47em;
+    width: 100%;
+    border: none;
+    border-radius: 1em;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 1em;
+}
+
+.conditions-text{
+    width: 100%;
+    height: max(calc(100vh - 32em), 20em);
+}
+
 footer{
-    margin-top: auto;
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1.5em; 
     background-color: #34a5eb;
     text-decoration: none;
     color:antiquewhite;
@@ -227,40 +309,25 @@ footer a:visited{
     color:white;
 }
 
-/* 404 ERROR */
+/*  FORM  */
 
-.e404{
-    text-align: center;
+form{
+    text-align: left;
 }
 
-.e404 p{
-    width: 5em;
-    margin: auto;
-    background-color:#346beb;
-    color: white;
-}  
-
-.e404 a{
-    color: white;
-}
-
-.e404 a:visited{
-    color: white;
-}
-
-.opening-hours-table td{
-    padding: 0.5em 1em 0.5em 0;
-    font-size: 1.5em;
-}
-
-.col-9 .conditions{
-    min-height: calc(100vh - 38em);
+input[type=text], input[type=email], textarea, select {
     width: 100%;
+    padding: 0.7em;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+    box-sizing: border-box;
+    margin-top: 0.3em;
+    margin-bottom: 0.8em;
 }
 
-.timetable{
-    height: 45vh;
-    width: 100%;
-    border: none;
-    border-radius: 1em;
+input[type=radio]{
+    height: 1.5em;
+    width: 1.5em;
+    background-color: antiquewhite;
+    margin: 1.5em;
 }

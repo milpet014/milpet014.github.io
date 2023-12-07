@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <div class="page-container">
     <header class="col-12 main_nav">
         <div class="col-12 title_main">
             <h1><a href="index.html">Café Bar Riviera</a></h1>
@@ -29,8 +30,7 @@
         </div>
     </header>
 
-    <content>
-
+    <div class="page-content">
         <div class="col-9">
             <article class="card">
                 <header>
@@ -71,27 +71,43 @@
                 <header>
                     <h3>Kde nás nájdete:</h3>
                 </header>
-                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d580.7315202981458!2d18.785102049183596!3d49.19304642766326!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4714590dc71cd6cd%3A0xebdf7b5a7e202ca2!2zRG9sbsOhIFRybm92c2vDoSAxOS80NSwgMDEwIDAxIMW9aWxpbmE!5e0!3m2!1ssk!2ssk!4v1701551768097!5m2!1ssk!2ssk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d580.7315202981458!2d18.785102049183596!3d49.19304642766326!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4714590dc71cd6cd%3A0xebdf7b5a7e202ca2!2zRG9sbsOhIFRybm92c2vDoSAxOS80NSwgMDEwIDAxIMW9aWxpbmE!5e0!3m2!1ssk!2ssk!4v1701551768097!5m2!1ssk!2ssk" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </article>
 
 
-            <article class="card">
+            <article class="card form">
                 <header>
                     <h3>Kontaktný formulár</h3>
                 </header>
-                <h4>Lorem</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sapien ut urna tristique, vitae ornare dolor euismod. Suspendisse ac lacinia risus. Proin eleifend consequat lacus facilisis ornare. Quisque aliquam pellentesque sapien, vitae maximus nunc viverra vel. Nam pharetra libero ut ligula hendrerit, non scelerisque est vestibulum. Cras venenatis auctor erat, in rhoncus risus dignissim et. Nunc sagittis condimentum nisl vitae ullamcorper. 
-                </p>
+                <form action="404.html">
+                    <label>Meno</label>
+                    <input type="text" name="name" placeholder="Ignác">
+                
+                    <label>Priezvisko</label>
+                    <input type="text" name="lastname" placeholder="Féherpataky">
 
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sapien ut urna tristique, vitae ornare dolor euismod. Suspendisse ac lacinia risus. Proin eleifend consequat lacus facilisis ornare. Quisque aliquam pellentesque sapien, vitae maximus nunc viverra vel. Nam pharetra libero ut ligula hendrerit, non scelerisque est vestibulum. Cras venenatis auctor erat, in rhoncus risus dignissim et. Nunc sagittis condimentum nisl vitae ullamcorper. 
-                </p>
+                    <label>e-mail</label>
+                    <input type="text" name="lastname" placeholder="igorko.nemeth@milpet.eu" required>                    
+
+                    <label>Boli ste v Riviere?</label><br>
+                    <input type="radio" name="visited">
+                    <label>Áno</label>
+                    <input type="radio" name="visited">
+                    <label>Nie</label><br>
+                                    
+                    <label>Vaša správa</label>
+                    <textarea name="message" placeholder="Tvoja správa..." rows="7"></textarea>
+                  </form>
+                  <input class="btn"  type="button" value="Odoslať">
             </article>
         </div>
 
         <div class="col-3">
             <aside class="card aside">
+                <header>
+                    <h3>Nasledujúca Riviera:</h3>
+                    <p class="rivieraDate">22.12.2023</p>
+                </header>
                 <header>
                     <h3>Zaujímavosti</h3>
                 </header>
@@ -99,20 +115,27 @@
                     <div>
                         <h4>Projektor</h4>
                         <p>
-                            Našej Riviere sa podarilo zakúpiť nový projektor <a target="_blank" href="https://www.alza.sk/vankyo-leisure-530-w-d6931628.htm">VANKYO LEISURE E30T/530W</a> vďaka, ktorému výrazne skvalitníme zážitok z pozerania multimédii v RivieraKino
+                            Našej Riviere sa podarilo 
+                            zakúpiť nový projektor 
+                            <a target="_blank" href="https://www.alza.sk/vankyo-leisure-530-w-d6931628.htm">VANKYO LEISURE E30T/530W</a> 
+                            vďaka, ktorému výrazne skvalitníme zážitok z pozerania multimédii v RivieraKino
                         </p>
                     </div>
 
                     <div>
                         <h4>Lorem</h4>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id dui nunc. Sed dignissim egestas lectus, luctus posuere purus feugiat bibendum. Praesent pulvinar sem erat, bibendum auctor risus porttitor dignissim. 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing 
+                            elit. Integer id dui nunc. Sed dignissim egestas 
+                            lectus, luctus posuere purus feugiat bibendum. 
+                            Praesent pulvinar sem erat, bibendum auctor 
+                            risus porttitor dignissim. 
                         </p>
                     </div>
                 </article>
             </aside>
         </div>
-    </content>
+    </div>
 
     <footer class="col-12">
         <ul>
@@ -123,7 +146,7 @@
             <li><a href="contacts.html">Kontakty</a></li>
         </ul>
     </footer>
-    
+</div>
 </body>
 
 </html>
