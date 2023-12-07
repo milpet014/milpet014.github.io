@@ -19,7 +19,6 @@ html {
 .page-content{
     height: 100%;
     display: table;
-    position: relative;
 }
 
 .page-content, .dropdown{
